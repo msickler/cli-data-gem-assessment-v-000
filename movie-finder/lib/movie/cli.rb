@@ -10,7 +10,7 @@ class Cli
   #anyway this is what i have
 
   def initialize(genre = nil)
-    @@genre = genre
+    
   end
 
   def call
@@ -127,7 +127,7 @@ end
     puts "Just say 'OK'"
     input = gets.strip
     if input == "OK"
-      Finder.random(genre)
+      Genre.random
     else
       puts "Exit or Restart?"
       input = gets.strip
